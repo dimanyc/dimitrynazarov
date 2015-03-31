@@ -16,7 +16,7 @@ gem 'neat'
 gem 'slim'
 
 group :development do 
-  # gem 'sqlite'
+  gem 'sqlite'
 end
 
 group :production do 
