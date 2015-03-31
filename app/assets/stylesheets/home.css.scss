@@ -2,18 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@include hidpi(1.5)
-{
-  width: 20em;
-}
+@include hidpi(1.5){width: 20em;}
+$mobile: new-breakpoint(max-width 480px 4,max-width 375px 4);
 
 body
 {
   @include outer-container;
   background-image: image-url("little-me-grayscale-scan.jpg");
-  background-size: cover;
   @include filter(grayscale(100%));
+  background-size: cover;
   overflow: hidden;
+  @include media($mobile) 
+  {
+    background-image:none;
+    background-color: $black;
+  }
 }
 
 section
@@ -55,13 +58,28 @@ section
   {
     @include span-columns(6); 
     @include shift(6);
+  } 
+
+h1,ul
+{
+  @include media($mobile)
+  {
+    @include span-columns(10);
+    @include shift(0);
+    margin:.5rem;  
   }
+}  
 
   article
   {
     background-color:rgba(0,0,0,0.4);
     margin-top:2em;
     padding:1em;
+    @include media($mobile)
+    {
+      @include span-columns(4);
+      @include shift(0);      
+    }
   }
 
   p
