@@ -15,11 +15,6 @@ gem 'bourbon'
 gem 'neat'
 gem 'slim'
 
-group :development do 
-  gem 'sqlite'
-end
-
 group :production do 
-  # gem 'pg'
   gem 'rails_12factor'  
 end
