@@ -14,3 +14,7 @@ gem 'normalize-rails'
 gem 'bourbon'
 gem 'neat'
 gem 'slim'
+
+group 'production' do 
+  gem 'pg'
+end
