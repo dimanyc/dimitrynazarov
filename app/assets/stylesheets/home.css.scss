@@ -10,7 +10,7 @@
 body
 {
   @include outer-container;
-  @include background-image(url("little-me-grayscale-scan.jpg"), linear-gradient(white 0, black 50%, transparent 50%));
+  @include background-image(url("little-me-grayscale-scan.jpg");
   background-size: cover;
   @include filter(grayscale(100%));
   overflow: hidden;
