@@ -9,13 +9,14 @@
 
 body
 {
-  @include image-rendering(optimizeSpeed);
   @include outer-container;
   @include background-image(url("little-me-grayscale-scan.jpg"), linear-gradient(white 0, black 50%, transparent 50%));
   background-size: cover;
+  @include filter(grayscale(100%));
+  overflow: hidden;
 }
 
-section#main
+section
 {
   @include span-columns(12);
   font-family: 'Open Sans Condensed', sans-serif;
@@ -23,22 +24,49 @@ section#main
 
   h1
   { 
-    @include span-columns(6);
-    @include shift(6);    
+ 
     text-transform: uppercase;
     font-size:3em;
   }
 
-  h2
+  h2{margin-top:2%;}
+
+  ul
   {
-    margin-top:10%;
+    margin:0;
+    padding:0;
+    li
+      {
+        display: inline;
+        a
+        {
+          color:$white;
+        }
+      }
+    li:not(:first-child){padding-left:1.5em;}
+    .fa
+    {
+      font-size:2em;
+    }
   }
 
-  p,h2,hr
+
+  h1,ul,article
   {
-    @include span-columns(6);
+    @include span-columns(6); 
     @include shift(6);
   }
 
+  article
+  {
+    background-color:rgba(0,0,0,0.4);
+    margin-top:2em;
+    padding:1em;
+  }
+
+  p
+  {
+    font-family: 'Open Sans', sans-serif;
+  }
 
 }
