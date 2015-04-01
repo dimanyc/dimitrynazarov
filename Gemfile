@@ -1,7 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '4.1.6'
-gem 'pg'
+#gem 'pg'
+gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -16,5 +17,21 @@ gem 'neat'
 gem 'slim'
 
 group :production do 
-  gem 'rails_12factor'  
+  gem 'rails_12factor'
+  # gem 'pg'  
 end
+
+# group :development do
+#   gem 'sqlite3'
+# end
+
+
+gem 'capistrano', '~> 3.1.0'
+gem 'capistrano-bundler', '~> 1.1.2'
+gem 'capistrano-rails', '~> 1.1.1'
+
+# Add this if you're using rbenv
+gem 'capistrano-rbenv', github: "capistrano/rbenv"
+
+# Add this if you're using rvm
+# gem 'capistrano-rvm', github: "capistrano/rvm"
