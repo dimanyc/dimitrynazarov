@@ -8,7 +8,8 @@ $mobile: new-breakpoint(max-width 480px 4,max-width 375px 4);
 body
 {
   @include outer-container;
-  background-image: image-url("little-me-grayscale-scan.jpg");
+  // background-image: image-url("little-me-grayscale-scan.jpg");
+  @include background-image(url("little-me-grayscale-scan.jpg"));
   @include filter(grayscale(100%));
   background-size: cover;
   overflow: hidden;
@@ -44,7 +45,24 @@ section
         a
         {
           color:$white;
+          position: relative;
+          .fa
+          {
+
+          }
         }
+
+        a:hover
+        {
+          .fa
+          {
+            
+            color:$transparent_black;
+            //@include transition(all 0.2s ease-in-out);
+
+          }
+        }  
+
       }
     li:not(:first-child){padding-left:1.5em;}
     .fa
@@ -72,7 +90,7 @@ h1,ul
 
   article
   {
-    background-color:rgba(0,0,0,0.4);
+    background-color:$transparent_black;
     margin-top:2em;
     padding:1em;
     @include media($mobile)

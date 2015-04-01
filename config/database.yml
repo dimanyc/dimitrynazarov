@@ -1,23 +1,16 @@
-development: 
-  adapter : postgresql
-  database: freuder_development
-  encoding: unicode
+default: &default
+  adapter: sqlite3
   pool: 5
   timeout: 5000
-  username: freuder_dev
-  password: 123456789
 
-test: 
-  adapter : postgresql
-  database: freuder_test
-  encoding: unicode
-  pool: 5
-  timeout: 5000
-  username: freuder_dev
-  password: 123456789
+development:
+  <<: *default
+  database: db/development.sqlite3
+
+test:
+  <<: *default
+  database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  encoding: utf8
-  database: freuder_production
-  pool: 5
+  <<: *default
+  database: db/production.sqlite3
