@@ -8,8 +8,7 @@ $mobile: new-breakpoint(max-width 480px 4,max-width 375px 4);
 body
 {
   @include outer-container;
-  // background-image: image-url("little-me-grayscale-scan.jpg");
-  @include background-image(url("little-me-grayscale-scan.jpg"));
+  background-image: image-url("little-me-grayscale-scan.jpg");
   @include filter(grayscale(100%));
   background-size: cover;
   overflow: hidden;
@@ -58,7 +57,6 @@ section
           {
             
             color:$transparent_black;
-            //@include transition(all 0.2s ease-in-out);
 
           }
         }  
