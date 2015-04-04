@@ -6,7 +6,15 @@ html
   = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
   = javascript_include_tag "application", "data-turbolinks-track" => true
   = csrf_meta_tags
-
+  header style="margin-top:2em;"
+    img src='assets/dimitry-nazarov.svg' widht='43px' height='43px' alt='Dimtiry Nazarov' style="background-color:#ee003b;border-radius:50%;padding:5px;vertical-align:middle;"
+    h1 style='display:inline;vertical-align:middle;'
+      a class="logo" data-text="Dimitry Nazarov" href="#" style="text-decoration:none;color:white;color:white;font-family:'titillium',sans-serif;text-transform:uppercase;letter-spacing:.05em;" DimitryNazarov.com
+    nav style='display:inline;'
+      ul style='display:inline;float:left;'
+        li style='float:left;'
+        li style='float:left;'
+        li style='float:left;'
   body
     = yield
 

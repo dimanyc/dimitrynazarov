@@ -9,13 +9,23 @@ body
 {
   @include outer-container;
   background-image: image-url("little-me-grayscale-scan.jpg");
-  @include filter(grayscale(100%));
   background-size: cover;
   overflow: hidden;
   @include media($mobile) 
   {
     background-image:none;
     background-color: $black;
+  }
+}
+
+header
+{
+  h1
+  {
+    a
+    {
+      @include textGlitch("logo", 17, white, black, red, blue, 450, 115);
+    }
   }
 }
 

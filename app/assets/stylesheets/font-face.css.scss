@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'titillium';
+    src: url(font_path('/TitilliumText25L003-webfont.eot'));
+    src: url(font_path('/TitilliumText25L003-webfont.eot?#iefix')) format('embedded-opentype'),
+         url(font_path('/TitilliumText25L003-webfont.woff2')) format('woff2'),
+         url(font_path('/TitilliumText25L003-webfont.woff')) format('woff'),
+         url(font_path('/TitilliumText25L003-webfont.ttf')) format('truetype'),
+         url(font_path('/TitilliumText25L003-webfont.svg#titilliumtext25l400_wt')) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0){
+    @font-face
+    {
+      font-family: 'titillium';
+      src: url(font_path('/TitilliumText25L003-webfont.svg#titilliumtext25l400_wt')) format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
