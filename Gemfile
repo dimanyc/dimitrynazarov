@@ -16,9 +16,9 @@ gem 'bourbon'
 gem 'neat'
 gem 'slim'
 
-group :production do 
+group :production do
   gem 'rails_12factor'
-  # gem 'pg'  
+  # gem 'pg'
 end
 
 # group :development do
@@ -26,12 +26,12 @@ end
 # end
 
 
-gem 'capistrano', '~> 3.1.0'
-gem 'capistrano-bundler', '~> 1.1.2'
-gem 'capistrano-rails', '~> 1.1.1'
+# gem 'capistrano', '~> 3.1.0'
+# gem 'capistrano-bundler', '~> 1.1.2'
+# gem 'capistrano-rails', '~> 1.1.1'
 
 # Add this if you're using rbenv
-gem 'capistrano-rbenv', github: "capistrano/rbenv"
+# gem 'capistrano-rbenv', github: "capistrano/rbenv"
 
 # Add this if you're using rvm
 # gem 'capistrano-rvm', github: "capistrano/rvm"
