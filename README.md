@@ -1,3 +1,1 @@
 # DimitryNazarov.com 
-
-*stay tuned*
