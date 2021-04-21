@@ -4,6 +4,7 @@ ruby "2.7.1"
 gem 'rails', '4.2.7'
 #gem 'pg'
 gem 'pg'
+gem 'bigdecimal', '1.3.5'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
